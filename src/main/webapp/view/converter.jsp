@@ -1,9 +1,4 @@
-<%@ page import="curency.converter.Converter" %>
-
-<%
-    Converter converter = new Converter();
-%>
-<form action="/result" method="get" >
+<form action="/result" method="post" >
     <fieldset>
         <legend>Curency converter</legend>
         <table>
@@ -20,7 +15,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td>
                     <input type="submit" value="convert">
                 </td>
             </tr>
